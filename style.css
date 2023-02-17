@@ -1,0 +1,92 @@
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: 'Caskaydia Cove Nerd Font', monospace;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: @text;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#workspaces {
+	border-radius: 1rem;
+        margin: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: @surface0;
+	margin-left: 1rem;
+}
+
+#workspaces button {
+    color: @lavender;
+    margin: 5px;
+    border-radius: 20px;
+    border-bottom: 2px solid @crust;
+}
+
+#workspaces button.active {
+    color: @teal;
+    border-radius: 20px;
+    border-bottom: 2px solid @peach;
+}
+
+#workspaces button:hover {
+    color: @sapphire;
+    border-radius: 1rem;
+}
+
+#window,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#disk,
+#temperature
+{
+    background-color: @surface0;
+    color: @text;
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
+	margin: 5px;
+}
+
+#memory, #disk, #temperature {
+    color: @lavender;
+}
+
+#cpu {
+    color: @green;
+}
+
+#memory {
+    color: @yellow;
+}
+
+#backlight {
+    color: @yellow;
+    padding-right: 1.25rem;
+}
+
+#network {
+	color: @peach;
+    padding-right: 1.25rem;
+}
+
+#pulseaudio {
+	color: @red;
+}
+
+#tray {
+    border-radius: 1rem;
+}
